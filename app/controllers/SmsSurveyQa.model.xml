@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="smsSurveyQA" alias="smsSurveyQA" created="2019-04-16T13:52:05" modified="2019-04-16T14:06:57" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="smsSurvey" parentTableSchema="dbo" parentTableName="smsSurvey" x="358" y="20">
+      <foreignKeyColumn columnName="fksmsSurveyid" parentColumnName="smssurveyid" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="smsSurveyQAid" fieldName="SmsSurveyQaid" label="QA ID" />
+    <column name="smsSurvey_question_id" fieldName="SmssurveyQuestionID" label="Question Platform ID" />
+    <column name="smsSurvey_question" fieldName="SmssurveyQuestion" label="Question" />
+    <column name="smsSurvey_answer" fieldName="SmssurveyAnswer" label="Answer" />
+    <column name="smsSurvey_type" fieldName="SmssurveyType" label="Question Type" />
+    <column name="created_date" fieldName="CreatedDate" label="Created Date" format="g" />
+    <column name="fksmsSurveyid" fieldName="FksmsSurveyid" label="Fksms Surveyid" aliasColumnName="smssurveyid" aliasForeignKey="smsSurvey" />
+    <column name="smssurveyid" fieldName="SmssurveySmssurveyid" label="Smssurvey Smssurveyid" foreignKey="smsSurvey" />
+  </columns>
+</dataModel>

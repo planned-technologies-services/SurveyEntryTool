@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="smsSurvey" alias="smsSurvey" created="2019-04-16T13:48:44" modified="2019-04-26T16:21:50" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="smsBlastMessageEmployee" parentTableSchema="dbo" parentTableName="smsBlastMessageEmployee" x="387" y="20">
+      <foreignKeyColumn columnName="primarykey_form_alt_variable" parentColumnName="eecid" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="smssurveyid" fieldName="Smssurveyid" label="Survey Submit ID" />
+    <column name="smssurvey_form_id" fieldName="SmssurveyFormID" label="Survey Platform ID" />
+    <column name="landed_date" fieldName="LandedDate" label="Landed Date" format="g" />
+    <column name="submitted_date" fieldName="SubmittedDate" label="Submitted Date" format="g" />
+    <column name="primarykey_form_variable" fieldName="PrimarykeyFormVariable" label="PK Form Variable" />
+    <column name="created_date" fieldName="CreatedDate" label="Created Date" format="g" />
+    <column name="fk_smsSurveyForm_id" fieldName="fkSmssurveyformid" label="fk Smssurveyform id" />
+    <column name="primarykey_form_alt_variable" fieldName="PrimarykeyFormAltVariable" label="Primarykey Form Alt Variable" aliasColumnName="eecid" aliasForeignKey="smsBlastMessageEmployee" />
+    <column name="eecid" fieldName="SmsblastmessageemployeeEecid" label="Smsblastmessageemployee Eecid" foreignKey="smsBlastMessageEmployee" />
+  </columns>
+</dataModel>

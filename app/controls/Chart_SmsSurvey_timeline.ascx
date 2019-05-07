@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Chart_SmsSurvey_timeline.ascx.cs" Inherits="Controls_Chart_SmsSurvey_timeline"  %><aquarium:ControllerDataSource ID="ControllerDataSource1" runat="server" DataController="SmsSurvey" DataView="timeline" PageRequestParameterName="r" />

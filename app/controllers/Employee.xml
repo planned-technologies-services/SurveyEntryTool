@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="Employee" conflictDetection="overwriteChanges" label="Employee" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"Employee"."employeeid" "Employeeid"
+	,"Employee"."company_code" "CompanyCode"
+	,"Employee"."first_name" "FirstName"
+	,"Employee"."last_name" "LastName"
+	,"Employee"."hire_date" "HireDate"
+	,"Employee"."site_code" "SiteCode"
+	,"Employee"."filenumber" "Filenumber"
+	,"Employee"."lastpaid_date" "LastpaidDate"
+	,"Employee"."ultipro_employeeid" "UltiproEmployeeid"
+	,"smsBlastMessageEmployee"."eecid" "SmsblastmessageemployeeEecid"
+from "dbo"."Employee" "Employee"
+	left join "dbo"."smsBlastMessageEmployee" "smsBlastMessageEmployee" on "Employee"."ultipro_employeeid" = "smsBlastMessageEmployee"."eecid"
+]]></text>
+    </command>
+    <command id="employeeidIdentityCommand" type="Text" event="Inserted">
+      <text><![CDATA[select @@identity]]></text>
+      <output>
+        <fieldOutput fieldName="Employeeid" />
+      </output>
+    </command>
+  </commands>
+  <fields>
+    <field name="Employeeid" type="Int32" allowNulls="false" isPrimaryKey="true" label="Employee ID" readOnly="true" />
+    <field name="CompanyCode" type="String" label="Company Code" length="50" showInSummary="true" />
+    <field name="FirstName" type="String" label="First Name" length="30" showInSummary="true" />
+    <field name="LastName" type="String" label="Last Name" length="30" showInSummary="true" />
+    <field name="HireDate" type="DateTime" dataFormatString="g" label="Hire Date" showInSummary="true" />
+    <field name="SiteCode" type="String" label="Site Code" length="3" showInSummary="true" />
+    <field name="Filenumber" type="String" label="File Number" length="7" />
+    <field name="LastpaidDate" type="DateTime" dataFormatString="g" label="Last Paid Date" />
+    <field name="UltiproEmployeeid" type="String" label="Ultipro Employeeid" length="12">
+      <items style="Lookup" dataController="SmsBlastMessageEmployee" dataValueField="Eecid" dataTextField="Eecid" />
+    </field>
+    <field name="SmsblastmessageemployeeEecid" type="String" readOnly="true" label="Smsblastmessageemployee Eecid" length="12" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Employee">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="CompanyCode" columns="50" />
+        <dataField fieldName="FirstName" columns="30" />
+        <dataField fieldName="LastName" columns="30" />
+        <dataField fieldName="HireDate" columns="20" />
+        <dataField fieldName="Filenumber" columns="7" />
+        <dataField fieldName="LastpaidDate" columns="20" />
+        <dataField fieldName="UltiproEmployeeid" aliasFieldName="SmsblastmessageemployeeEecid" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Employee">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Employee" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="CompanyCode" columns="50" />
+            <dataField fieldName="FirstName" columns="30" />
+            <dataField fieldName="LastName" columns="30" />
+            <dataField fieldName="HireDate" columns="20" />
+            <dataField fieldName="Filenumber" columns="7" />
+            <dataField fieldName="LastpaidDate" columns="20" />
+            <dataField fieldName="UltiproEmployeeid" aliasFieldName="SmsblastmessageemployeeEecid" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="New Employee">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="CompanyCode" columns="50" />
+            <dataField fieldName="FirstName" columns="30" />
+            <dataField fieldName="LastName" columns="30" />
+            <dataField fieldName="HireDate" columns="20" />
+            <dataField fieldName="SiteCode" columns="3" />
+            <dataField fieldName="Filenumber" columns="7" />
+            <dataField fieldName="LastpaidDate" columns="20" />
+            <dataField fieldName="UltiproEmployeeid" aliasFieldName="SmsblastmessageemployeeEecid" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+  </actions>
+</dataController>

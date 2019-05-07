@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="SmsSurvey" conflictDetection="overwriteChanges" label="Sms Survey" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"smsSurvey"."smssurveyid" "Smssurveyid"
+	,"smsSurvey"."smssurvey_form_id" "SmssurveyFormID"
+	,"smsSurvey"."landed_date" "LandedDate"
+	,"smsSurvey"."submitted_date" "SubmittedDate"
+	,"smsSurvey"."primarykey_form_variable" "PrimarykeyFormVariable"
+	,"smsSurvey"."created_date" "CreatedDate"
+	,"smsSurvey"."fk_smsSurveyForm_id" "fkSmssurveyformid"
+	,"smsSurvey"."primarykey_form_alt_variable" "PrimarykeyFormAltVariable"
+	,"smsBlastMessageEmployee"."eecid" "SmsblastmessageemployeeEecid"
+from "dbo"."smsSurvey" "smsSurvey"
+	left join "dbo"."smsBlastMessageEmployee" "smsBlastMessageEmployee" on "smsSurvey"."primarykey_form_alt_variable" = "smsBlastMessageEmployee"."eecid"
+]]></text>
+    </command>
+    <command id="smssurveyidIdentityCommand" type="Text" event="Inserted">
+      <text><![CDATA[select @@identity]]></text>
+      <output>
+        <fieldOutput fieldName="Smssurveyid" />
+      </output>
+    </command>
+  </commands>
+  <fields>
+    <field name="Smssurveyid" type="Int32" allowNulls="false" isPrimaryKey="true" label="Survey Submit ID" readOnly="true" />
+    <field name="SmssurveyFormID" type="String" label="Survey Platform ID" length="10" showInSummary="true" />
+    <field name="LandedDate" type="DateTime" dataFormatString="g" label="Landed Date" showInSummary="true" />
+    <field name="SubmittedDate" type="DateTime" dataFormatString="g" label="Submitted Date" showInSummary="true" />
+    <field name="PrimarykeyFormVariable" type="String" label="PK Form Variable" length="12" showInSummary="true" />
+    <field name="CreatedDate" type="DateTime" dataFormatString="g" default="(getdate())" label="Created Date" showInSummary="true" />
+    <field name="fkSmssurveyformid" type="Int32" label="fk Smssurveyform id" />
+    <field name="PrimarykeyFormAltVariable" type="String" label="Primarykey Form Alt Variable" length="12">
+      <items style="Lookup" dataController="SmsBlastMessageEmployee" dataValueField="Eecid" dataTextField="Eecid" />
+    </field>
+    <field name="SmsblastmessageemployeeEecid" type="String" readOnly="true" label="Smsblastmessageemployee Eecid" length="12" />
+    <field name="SmsSurveyQa" type="DataView" label="SMS Survey QA" showInSummary="true">
+      <dataView controller="SmsSurveyQa" view="grid1" filterFields="FksmsSurveyid" />
+    </field>
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="SMS Survey Submissions" groupExpression="SmssurveyFormID">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="SmssurveyFormID" columns="10" />
+        <dataField fieldName="LandedDate" columns="20" />
+        <dataField fieldName="SubmittedDate" columns="20" />
+        <dataField fieldName="PrimarykeyFormVariable" columns="12" />
+        <dataField fieldName="CreatedDate" columns="20" />
+        <dataField fieldName="fkSmssurveyformid" columns="15" hidden="true" />
+        <dataField fieldName="PrimarykeyFormAltVariable" aliasFieldName="SmsblastmessageemployeeEecid" />
+        <dataField fieldName="SmsSurveyQa" columns="15" />
+      </dataFields>
+    </view>
+    <view id="SurveyList" type="Grid" commandId="command1" label="Submissions for this Survey">
+      <headerText>Submissions for this Survey</headerText>
+      <dataFields>
+        <dataField fieldName="LandedDate" columns="20" />
+        <dataField fieldName="SubmittedDate" columns="20" />
+        <dataField fieldName="PrimarykeyFormVariable" columns="12" />
+        <dataField fieldName="CreatedDate" columns="20" />
+        <dataField fieldName="fkSmssurveyformid" columns="15" hidden="true" />
+        <dataField fieldName="PrimarykeyFormAltVariable" aliasFieldName="SmsblastmessageemployeeEecid" />
+        <dataField fieldName="SmsSurveyQa" columns="15">
+          <dataView showViewSelector="false" showRowNumber="true" />
+        </dataField>
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Sms Survey">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Survey Information" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="SmssurveyFormID" columns="10" />
+            <dataField fieldName="LandedDate" columns="20" />
+            <dataField fieldName="SubmittedDate" columns="20" />
+            <dataField fieldName="PrimarykeyFormVariable" columns="12" />
+            <dataField fieldName="fkSmssurveyformid" columns="15" />
+            <dataField fieldName="PrimarykeyFormAltVariable" aliasFieldName="SmsblastmessageemployeeEecid" />
+          </dataFields>
+        </category>
+        <category headerText="Answers for this Submission" id="c3">
+          <dataFields>
+            <dataField fieldName="SmsSurveyQa" columns="15">
+              <dataView showDescription="false" showViewSelector="false" />
+            </dataField>
+          </dataFields>
+        </category>
+        <category headerText="Audit" id="c2" flow="NewRow">
+          <dataFields>
+            <dataField fieldName="CreatedDate" columns="20" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+  </actions>
+</dataController>

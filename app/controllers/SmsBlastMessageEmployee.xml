@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="SmsBlastMessageEmployee" conflictDetection="overwriteChanges" label="Sms Blast Message Employee" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"smsBlastMessageEmployee"."sbmsgemployeeid" "Sbmsgemployeeid"
+	,"smsBlastMessageEmployee"."sbmsgid" "Sbmsgid"
+	,"smsBlastMessageEmployee"."sms_send_status" "SmsSendStatus"
+	,"smsBlastMessageEmployee"."sms_send_date" "SmsSendDate"
+	,"smsBlastMessageEmployee"."created_date" "CreatedDate"
+	,"smsBlastMessageEmployee"."eecid" "Eecid"
+	,"Employee"."ultipro_employeeid" "EmployeeUltiproEmployeeid"
+	,"Employee"."first_name" "EmployeeFirstName"
+	,"Employee"."last_name" "EmployeeLastName"
+	,"Employee"."employment_status" "EmployeeEmploymentStatus"
+from "dbo"."smsBlastMessageEmployee" "smsBlastMessageEmployee"
+	left join "dbo"."Employee" "Employee" on "smsBlastMessageEmployee"."eecid" = "Employee"."ultipro_employeeid"
+]]></text>
+    </command>
+    <command id="sbmsgemployeeidIdentityCommand" type="Text" event="Inserted">
+      <text><![CDATA[select @@identity]]></text>
+      <output>
+        <fieldOutput fieldName="Sbmsgemployeeid" />
+      </output>
+    </command>
+  </commands>
+  <fields>
+    <field name="Sbmsgemployeeid" type="Int32" allowNulls="false" isPrimaryKey="true" label="Sbmsgemployeeid" readOnly="true" />
+    <field name="Sbmsgid" type="String" label="Sbmsgid" length="40" showInSummary="true" />
+    <field name="SmsSendStatus" type="String" label="Sms Send Status" length="15" showInSummary="true">
+      <items style="DropDownList">
+        <item value="0" text="Not Sent" />
+        <item value="1" text="Sent" />
+        <item value="2" text="Resent (2)" />
+        <item value="3" text="Resent (3)" />
+      </items>
+    </field>
+    <field name="SmsSendDate" type="DateTime" dataFormatString="g" label="Sms Send Date" showInSummary="true" />
+    <field name="CreatedDate" type="DateTime" dataFormatString="g" default="(getdate())" label="Created Date" showInSummary="true" />
+    <field name="Eecid" type="String" label="Eecid" length="12" showInSummary="true">
+      <items style="Lookup" dataController="Employee" newDataView="createForm1" dataValueField="UltiproEmployeeid" dataTextField="UltiproEmployeeid" copy="EmployeeFirstName=FirstName, EmployeeLastName=LastName, " />
+    </field>
+    <field name="EmployeeUltiproEmployeeid" type="String" readOnly="true" label="Employee Ultipro Employeeid" length="12" />
+    <field name="EmployeeFirstName" type="String" readOnly="true" label="Employee First Name" length="30" />
+    <field name="EmployeeLastName" type="String" readOnly="true" label="Employee Last Name" length="30" />
+    <field name="SurveySubmitted" type="String" readOnly="true" label="Survey Submitted" computed="true">
+      <formula>case
+	when (select count(smssurveyid) from smsSurvey where primarykey_form_variable = smsBlastMessageEmployee.sbmsgemployeeid) &gt; 0 then 'Y'
+	else 'N'
+end</formula>
+      <items style="DropDownList">
+        <item value="Y" text="Yes" />
+        <item value="N" text="No" />
+      </items>
+    </field>
+    <field name="EmployeeEmploymentStatus" type="String" readOnly="true" label="Employee Employment Status" length="1" />
+    <field name="SmsSurvey" type="DataView" label="SMS Survey" contextFields="PrimarykeyFormAltVariable=Eecid">
+      <dataView controller="SmsSurvey" view="grid1" filterFields="PrimarykeyFormAltVariable" />
+    </field>
+  </fields>
+  <views>
+    <view id="list380" type="Grid" commandId="command1" label="SMS Blast Message Employee" filter="Sbmsgid = '380'">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="Sbmsgid" columns="40" hidden="true" />
+        <dataField fieldName="EmployeeFirstName" columns="30" />
+        <dataField fieldName="EmployeeLastName" columns="30" />
+        <dataField fieldName="SmsSendStatus" columns="15" />
+        <dataField fieldName="SmsSendDate" columns="20">
+          <visibility>
+            <expression test="[SmsSendStatus] != '0'" type="ClientScript" />
+          </visibility>
+        </dataField>
+        <dataField fieldName="CreatedDate" columns="20" />
+        <dataField fieldName="Eecid" aliasFieldName="EmployeeUltiproEmployeeid" hidden="true" />
+        <dataField fieldName="SurveySubmitted" />
+        <dataField fieldName="EmployeeEmploymentStatus" columns="1" hidden="true" />
+        <dataField fieldName="SmsSurvey" columns="15" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Sms Blast Message Employee">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Employee Information" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="EmployeeFirstName" columns="30" />
+            <dataField fieldName="EmployeeLastName" columns="30" />
+            <dataField fieldName="SurveySubmitted" />
+            <dataField fieldName="Eecid" aliasFieldName="EmployeeUltiproEmployeeid" />
+          </dataFields>
+        </category>
+        <category headerText="SMS Information" id="c2">
+          <dataFields>
+            <dataField fieldName="Sbmsgid" columns="40" hidden="true" />
+            <dataField fieldName="SmsSendStatus" columns="15" />
+            <dataField fieldName="SmsSendDate" columns="20">
+              <visibility>
+                <expression test="[SmsSendStatus] != '0'" type="ClientScript" />
+              </visibility>
+            </dataField>
+            <dataField fieldName="SmsSurvey" columns="15">
+              <visibility>
+                <expression test="[SmsSendStatus] != '0'" type="ClientScript" />
+              </visibility>
+            </dataField>
+          </dataFields>
+        </category>
+        <category headerText="Audit" id="c3" flow="NewRow">
+          <dataFields>
+            <dataField fieldName="CreatedDate" columns="20" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+  </actions>
+</dataController>

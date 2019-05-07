@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="smsBlastMessageEmployee" alias="smsBlastMessageEmployee" created="2019-04-17T15:27:09" modified="2019-04-26T16:14:44" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="Employee" parentTableSchema="dbo" parentTableName="Employee" x="325" y="20">
+      <foreignKeyColumn columnName="eecid" parentColumnName="ultipro_employeeid" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="sbmsgemployeeid" fieldName="Sbmsgemployeeid" label="Sbmsgemployeeid" />
+    <column name="sbmsgid" fieldName="Sbmsgid" label="Sbmsgid" />
+    <column name="sms_send_status" fieldName="SmsSendStatus" label="Sms Send Status" />
+    <column name="sms_send_date" fieldName="SmsSendDate" label="Sms Send Date" format="g" />
+    <column name="created_date" fieldName="CreatedDate" label="Created Date" format="g" />
+    <column name="eecid" fieldName="Eecid" label="Eecid" aliasColumnName="ultipro_employeeid" aliasForeignKey="Employee" />
+    <column name="ultipro_employeeid" fieldName="EmployeeUltiproEmployeeid" label="Employee Ultipro Employeeid" foreignKey="Employee" />
+    <column name="first_name" fieldName="EmployeeFirstName" label="Employee First Name" foreignKey="Employee" />
+    <column name="last_name" fieldName="EmployeeLastName" label="Employee Last Name" foreignKey="Employee" />
+    <column fieldName="SurveySubmitted" type="varchar(1)" dataType="String" label="Survey Submitted">
+      <formula><![CDATA[case
+	when (select count(smssurveyid) from smsSurvey where primarykey_form_variable = smsBlastMessageEmployee.sbmsgemployeeid) > 0 then 'Y'
+	else 'N'
+end]]></formula>
+    </column>
+    <column name="employment_status" fieldName="EmployeeEmploymentStatus" label="Employee Employment Status" foreignKey="Employee" />
+  </columns>
+</dataModel>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="SmsSurveyQa" conflictDetection="overwriteChanges" label="Sms Survey Qa" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"smsSurveyQA"."smsSurveyQAid" "SmsSurveyQaid"
+	,"smsSurveyQA"."smsSurvey_question_id" "SmssurveyQuestionID"
+	,"smsSurveyQA"."smsSurvey_question" "SmssurveyQuestion"
+	,"smsSurveyQA"."smsSurvey_answer" "SmssurveyAnswer"
+	,"smsSurveyQA"."smsSurvey_type" "SmssurveyType"
+	,"smsSurveyQA"."created_date" "CreatedDate"
+	,"smsSurveyQA"."fksmsSurveyid" "FksmsSurveyid"
+	,"smsSurvey"."smssurveyid" "SmssurveySmssurveyid"
+from "dbo"."smsSurveyQA" "smsSurveyQA"
+	left join "dbo"."smsSurvey" "smsSurvey" on "smsSurveyQA"."fksmsSurveyid" = "smsSurvey"."smssurveyid"
+]]></text>
+    </command>
+    <command id="smsSurveyQAidIdentityCommand" type="Text" event="Inserted">
+      <text><![CDATA[select @@identity]]></text>
+      <output>
+        <fieldOutput fieldName="SmsSurveyQaid" />
+      </output>
+    </command>
+  </commands>
+  <fields>
+    <field name="SmsSurveyQaid" type="Int32" allowNulls="false" isPrimaryKey="true" label="QA ID" readOnly="true" />
+    <field name="SmssurveyQuestionID" type="String" label="Question Platform ID" length="20" showInSummary="true" />
+    <field name="SmssurveyQuestion" type="String" label="Question" length="200" showInSummary="true" />
+    <field name="SmssurveyAnswer" type="String" label="Answer" length="200" showInSummary="true" />
+    <field name="SmssurveyType" type="String" label="Question Type" length="50" showInSummary="true" />
+    <field name="CreatedDate" type="DateTime" dataFormatString="g" default="(getdate())" label="Created Date" showInSummary="true" />
+    <field name="FksmsSurveyid" type="Int32" label="Fksms Surveyid">
+      <items style="Lookup" dataController="SmsSurvey" dataValueField="Smssurveyid" dataTextField="Smssurveyid" />
+    </field>
+    <field name="SmssurveySmssurveyid" type="Int32" label="Smssurvey Smssurveyid" readOnly="true" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Sms Survey Qa">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="SmssurveyQuestionID" columns="20" />
+        <dataField fieldName="SmssurveyQuestion" />
+        <dataField fieldName="SmssurveyAnswer" />
+        <dataField fieldName="SmssurveyType" columns="50" />
+        <dataField fieldName="CreatedDate" columns="20" />
+        <dataField fieldName="FksmsSurveyid" aliasFieldName="SmssurveySmssurveyid" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Sms Survey Qa">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Question and Answer Information" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="SmssurveyQuestionID" columns="20" />
+            <dataField fieldName="SmssurveyQuestion" />
+            <dataField fieldName="SmssurveyAnswer" />
+            <dataField fieldName="SmssurveyType" columns="50" />
+            <dataField fieldName="FksmsSurveyid" aliasFieldName="SmssurveySmssurveyid" />
+          </dataFields>
+        </category>
+        <category headerText="Audit" id="c2" flow="NewRow">
+          <dataFields>
+            <dataField fieldName="CreatedDate" columns="20" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+  </actions>
+</dataController>

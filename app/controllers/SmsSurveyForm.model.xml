@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="smsSurveyForm" alias="smsSurveyForm" created="2019-04-15T16:52:50" modified="2019-04-15T16:54:06" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="smssurveyformid" fieldName="Smssurveyformid" label="SMS Survey ID" />
+    <column name="smssurvey_platform_id" fieldName="SmssurveyPlatformID" label="Platform ID" />
+    <column name="smssurvey_desc" fieldName="SmssurveyDesc" label="Description" />
+    <column name="smssurvey_platform" fieldName="SmssurveyPlatform" label="Platform" />
+    <column name="smssurvey_comment" fieldName="SmssurveyComment" label="Comment" />
+    <column name="smssurvey_active" fieldName="SmssurveyActive" label="Active?" format="" />
+    <column name="primarykey_table" fieldName="PrimarykeyTable" label="PK Table" />
+    <column name="primarykey_form_variable" fieldName="PrimarykeyFormVariable" label="Primarykey Form Variable" />
+    <column name="created_date" fieldName="CreatedDate" label="Created Date" format="g" />
+    <column name="created_by" fieldName="CreatedBy" label="Created By" />
+    <column name="updated_date" fieldName="UpdatedDate" label="Updated Date" format="g" />
+    <column name="updated_by" fieldName="UpdatedBy" label="Updated By" />
+  </columns>
+</dataModel>

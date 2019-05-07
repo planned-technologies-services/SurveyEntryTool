@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="Employee" alias="Employee" created="2019-04-19T13:51:20" modified="2019-04-19T14:24:10" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="smsBlastMessageEmployee" parentTableSchema="dbo" parentTableName="smsBlastMessageEmployee" x="331" y="20">
+      <foreignKeyColumn columnName="ultipro_employeeid" parentColumnName="eecid" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="employeeid" fieldName="Employeeid" label="Employee ID" />
+    <column name="company_code" fieldName="CompanyCode" label="Company Code" />
+    <column name="first_name" fieldName="FirstName" label="First Name" />
+    <column name="last_name" fieldName="LastName" label="Last Name" />
+    <column name="hire_date" fieldName="HireDate" label="Hire Date" format="g" />
+    <column name="site_code" fieldName="SiteCode" label="Site Code" />
+    <column name="filenumber" fieldName="Filenumber" label="File Number" />
+    <column name="lastpaid_date" fieldName="LastpaidDate" label="Last Paid Date" format="g" />
+    <column name="ultipro_employeeid" fieldName="UltiproEmployeeid" label="Ultipro Employeeid" aliasColumnName="eecid" aliasForeignKey="smsBlastMessageEmployee" />
+    <column name="eecid" fieldName="SmsblastmessageemployeeEecid" label="Smsblastmessageemployee Eecid" foreignKey="smsBlastMessageEmployee" />
+  </columns>
+</dataModel>

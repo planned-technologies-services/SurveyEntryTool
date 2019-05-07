@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="utf-8"?><logs><log type="Controllers"><c y="NodeSet" t="2019-04-15T16:57:51"><controller name="SmsSurveyForm" />
+<field name="SmssurveyActive" />
+<insert type="item">
+  <Value>Y</Value>
+  <Text>Yes</Text>
+</insert></c><c y="NodeSet" t="2019-04-15T16:58:01"><controller name="SmsSurveyForm" />
+<field name="SmssurveyActive" />
+<insert type="item">
+  <Value>N</Value>
+  <Text>No</Text>
+</insert></c><c y="NodeSet" t="2019-04-15T16:58:14"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyFormVariable" />
+<update>
+  <Label>PK Form Variable</Label>
+</update></c><c y="NodeSet" t="2019-04-15T16:58:51"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<insert type="item">
+  <Value>Employee</Value>
+  <Text>Employee</Text>
+</insert></c><c y="NodeSet" t="2019-04-15T16:59:09"><controller name="SmsSurveyForm" />
+<field name="SmssurveyActive" />
+<update>
+  <ItemsStyle>RadioButtonList</ItemsStyle>
+</update></c><c y="NodeSet" t="2019-04-15T17:00:00"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="SmssurveyPlatformID" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-15T17:00:27"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="CreatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-15T17:00:39"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="UpdatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-15T17:01:09"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Audit</HeaderText>
+  <Flow>NewRow</Flow>
+</insert></c><c y="NodeSet" t="2019-04-15T17:02:46"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="CreatedDate" />
+</move></c><c y="NodeSet" t="2019-04-15T17:02:46"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="CreatedBy" />
+</move></c><c y="NodeSet" t="2019-04-15T17:02:46"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="UpdatedDate" />
+</move></c><c y="NodeSet" t="2019-04-15T17:02:46"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="UpdatedBy" />
+</move></c><c y="NodeSet" t="2019-04-15T17:03:35"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Platform Information</HeaderText>
+  <Flow>NewRow</Flow>
+</insert></c><c y="NodeSet" t="2019-04-15T17:03:40"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c3" />
+</move></c><c y="NodeSet" t="2019-04-15T17:03:48"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c3" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="SmssurveyPlatformID" />
+</move></c><c y="NodeSet" t="2019-04-15T17:03:48"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c3" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="SmssurveyPlatform" />
+</move></c><c y="NodeSet" t="2019-04-15T17:06:43"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c1" />
+<update>
+  <HeaderText>Survey Information</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-15T17:07:13"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Survey Connection Information</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-15T17:07:19"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c4" />
+</move></c><c y="NodeSet" t="2019-04-15T17:07:28"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c4" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="PrimarykeyTable" />
+</move></c><c y="NodeSet" t="2019-04-15T17:07:28"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c4" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="PrimarykeyFormVariable" />
+</move></c><c y="NodeSet" t="2019-04-15T17:07:36"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c3" />
+</move></c><c y="NodeSet" t="2019-04-15T17:08:04"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<dataField fieldName="CreatedDate" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-15T17:08:13"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<dataField fieldName="CreatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-15T17:08:20"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<dataField fieldName="UpdatedDate" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-15T17:08:29"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<dataField fieldName="UpdatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-15T17:08:58"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c1" />
+<update>
+  <HeaderText>Survey Information</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-15T17:09:19"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<insert type="category">
+  <HeaderText>Platform Information</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-15T17:09:36"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<insert type="category">
+  <HeaderText>Survey Connection Information</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-15T17:10:05"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="SmssurveyPlatformID" />
+</move></c><c y="NodeSet" t="2019-04-15T17:10:05"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="SmssurveyPlatform" />
+</move></c><c y="NodeSet" t="2019-04-15T17:10:17"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="PrimarykeyTable" />
+</move></c><c y="NodeSet" t="2019-04-15T17:10:17"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="createForm1" />
+  <category id="c1" />
+  <dataField fieldName="PrimarykeyFormVariable" />
+</move></c><c y="NodeSet" t="2019-04-15T17:10:31"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="CreatedDate" />
+<delete /></c><c y="NodeSet" t="2019-04-15T17:10:31"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="CreatedBy" />
+<delete /></c><c y="NodeSet" t="2019-04-15T17:10:31"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="UpdatedDate" />
+<delete /></c><c y="NodeSet" t="2019-04-15T17:10:31"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c1" />
+<dataField fieldName="UpdatedBy" />
+<delete /></c><c y="NodeSet" t="2019-04-15T17:12:00"><controller name="SmsSurveyForm" />
+<insert type="rule">
+  <Type>Sql</Type>
+  <CommandName>Update</CommandName>
+  <Phase>Execute</Phase>
+  <Script>@UpdatedDate = GETDATE();</Script>
+</insert></c><c y="NodeSet" t="2019-04-15T17:17:29"><controller name="SmsSurveyForm" />
+<field name="SmssurveyActive" />
+<update>
+  <CodeDefault>('Y')</CodeDefault>
+</update></c><c y="NodeSet" t="2019-04-15T17:17:41"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<update>
+  <CodeDefault>('Employee')</CodeDefault>
+</update></c><c y="NodeSet" t="2019-04-15T17:19:01"><controller name="SmsSurveyForm" />
+<field name="SmssurveyActive" />
+<update>
+  <CodeDefault>'Y'</CodeDefault>
+</update></c><c y="NodeSet" t="2019-04-15T17:19:12"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<update>
+  <CodeDefault>'Employee'</CodeDefault>
+</update></c><c y="NodeSet" t="2019-04-15T17:19:44"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<update>
+  <CodeDefault>Employee</CodeDefault>
+</update></c><c y="NodeSet" t="2019-04-15T17:21:43"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<update>
+  <CodeDefault />
+</update></c><c y="NodeSet" t="2019-04-15T17:22:56"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c3" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="createForm1" />
+  <category id="c2" />
+  <dataField fieldName="PrimarykeyTable" />
+</move></c><c y="NodeSet" t="2019-04-15T17:22:56"><controller name="SmsSurveyForm" />
+<view id="createForm1" />
+<category id="c3" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="createForm1" />
+  <category id="c2" />
+  <dataField fieldName="PrimarykeyFormVariable" />
+</move></c><c y="NodeSet" t="2019-04-15T17:23:59"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<update>
+  <CodeDefault>Employee</CodeDefault>
+</update></c><c y="NodeSet" t="2019-04-15T17:24:38"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<update>
+  <CodeDefault>'Employee'</CodeDefault>
+</update></c><c y="NodeSet" t="2019-04-15T17:34:39"><controller name="SmsSurveyForm" />
+<field name="PrimarykeyTable" />
+<update>
+  <CodeDefault />
+</update></c><c y="NodeSet" t="2019-04-16T13:57:04"><controller name="SmsSurvey" />
+<move>
+  <controller name="SmsSurveyQa" />
+</move></c><c y="NodeSet" t="2019-04-16T13:57:10"><controller name="SmsSurvey" />
+<view id="grid1" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="SmsSurveyQa" />
+</move></c><c y="NodeSet" t="2019-04-16T13:57:13"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="SmsSurveyQa" />
+</move></c><c y="NodeSet" t="2019-04-16T13:57:16"><controller name="SmsSurvey" />
+<view id="createForm1" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="SmsSurveyQa" />
+</move></c><c y="NodeSet" t="2019-04-16T13:57:27"><controller name="SmsSurvey" />
+<view id="createForm1" />
+<dataField fieldName="SmsSurveyQa" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T14:10:27"><controller name="SmsSurvey" />
+<actionGroup id="ag1" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:10:27"><controller name="SmsSurvey" />
+<actionGroup id="ag1" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:10:27"><controller name="SmsSurvey" />
+<actionGroup id="ag1" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:10:27"><controller name="SmsSurvey" />
+<actionGroup id="ag1" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:10:27"><controller name="SmsSurvey" />
+<actionGroup id="ag1" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:11:17"><controller name="SmsSurvey" />
+<actionGroup id="ag2" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:11:17"><controller name="SmsSurvey" />
+<actionGroup id="ag3" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:11:17"><controller name="SmsSurvey" />
+<actionGroup id="ag4" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:12:19"><controller name="SmsSurvey" />
+<actionGroup id="ag6" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:12:19"><controller name="SmsSurvey" />
+<actionGroup id="ag8" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:12:56"><controller name="SmsSurveyQa" />
+<actionGroup id="ag1" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:12:56"><controller name="SmsSurveyQa" />
+<actionGroup id="ag1" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:12:56"><controller name="SmsSurveyQa" />
+<actionGroup id="ag1" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:12:56"><controller name="SmsSurveyQa" />
+<actionGroup id="ag1" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:12:56"><controller name="SmsSurveyQa" />
+<actionGroup id="ag1" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:05"><controller name="SmsSurveyQa" />
+<actionGroup id="ag2" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:05"><controller name="SmsSurveyQa" />
+<actionGroup id="ag3" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:05"><controller name="SmsSurveyQa" />
+<actionGroup id="ag4" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:14"><controller name="SmsSurveyQa" />
+<actionGroup id="ag5" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:14"><controller name="SmsSurveyQa" />
+<actionGroup id="ag5" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:14"><controller name="SmsSurveyQa" />
+<actionGroup id="ag5" />
+<action id="a4" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:14"><controller name="SmsSurveyQa" />
+<actionGroup id="ag5" />
+<action id="a5" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:14"><controller name="SmsSurveyQa" />
+<actionGroup id="ag5" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:14"><controller name="SmsSurveyQa" />
+<actionGroup id="ag5" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:14"><controller name="SmsSurveyQa" />
+<actionGroup id="ag5" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:24"><controller name="SmsSurveyQa" />
+<actionGroup id="ag6" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:13:24"><controller name="SmsSurveyQa" />
+<actionGroup id="ag8" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:15:56"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<update>
+  <GroupExpression>SmssurveyFormID, CreatedDate asc</GroupExpression>
+</update></c><c y="NodeSet" t="2019-04-16T14:17:35"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<update>
+  <GroupExpression>SmssurveyFormID</GroupExpression>
+</update></c><c y="NodeSet" t="2019-04-16T14:18:17"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<update>
+  <GroupExpression>Smssurveyformid</GroupExpression>
+</update></c><c y="NodeSet" t="2019-04-16T14:18:59"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<update>
+  <GroupExpression>SmssurveyPlatformID</GroupExpression>
+</update></c><c y="NodeSet" t="2019-04-16T14:20:06"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<update>
+  <GroupExpression />
+</update></c><c y="NodeSet" t="2019-04-16T14:20:38"><controller name="SmsSurvey" />
+<view id="grid1" />
+<update>
+  <GroupExpression>SmssurveyFormID</GroupExpression>
+</update></c><c y="NodeSet" t="2019-04-16T14:22:35"><controller name="SmsSurvey" />
+<view id="grid1" />
+<update>
+  <Label>SMS Survey Submissions</Label>
+</update></c><c y="NodeSet" t="2019-04-16T14:23:19"><controller name="SmsSurvey" />
+<view id="createForm1" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:23:35"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Audit</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-16T14:23:39"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurvey" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="CreatedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T14:25:09"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<category id="c1" />
+<update>
+  <HeaderText>Survey Information</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-16T14:26:40"><controller name="SmsSurveyQa" />
+<view id="editForm1" />
+<category id="c1" />
+<update>
+  <HeaderText>Question and Answer Information</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-16T14:26:48"><controller name="SmsSurveyQa" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Audit</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-16T14:26:53"><controller name="SmsSurveyQa" />
+<view id="editForm1" />
+<category id="c2" />
+<update>
+  <Flow>NewRow</Flow>
+</update></c><c y="NodeSet" t="2019-04-16T14:27:00"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<category id="c2" />
+<update>
+  <Flow>NewRow</Flow>
+</update></c><c y="NodeSet" t="2019-04-16T14:27:08"><controller name="SmsSurveyQa" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsSurveyQa" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="CreatedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T14:27:20"><controller name="SmsSurveyQa" />
+<view id="createForm1" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:33:58"><controller name="SmsSurveyForm" />
+<move>
+  <controller name="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-16T14:34:03"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <field name="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-16T14:34:08"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <field name="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-16T14:34:17"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c4" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c2" />
+  <dataField fieldName="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-16T14:34:24"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c4" />
+  <dataField fieldName="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-16T14:34:39"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c2" />
+  <dataField fieldName="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-16T14:34:51"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<copy>
+  <controller name="SmsSurveyForm" />
+  <view id="grid1" />
+  <dataField fieldName="SmsSurvey" />
+</copy></c><c y="NodeSet" t="2019-04-16T14:35:34"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Submissions</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-16T14:35:38"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c5" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c2" />
+  <dataField fieldName="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-16T14:35:41"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c4" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c5" />
+</move></c><c y="NodeSet" t="2019-04-16T14:46:10"><controller name="SmsSurvey" />
+<view id="grid1" />
+<update>
+  <GroupExpression />
+</update></c><c y="NodeSet" t="2019-04-16T14:50:41"><controller name="SmsSurvey" />
+<actionGroup id="ag5" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:50:41"><controller name="SmsSurvey" />
+<actionGroup id="ag5" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:50:41"><controller name="SmsSurvey" />
+<actionGroup id="ag5" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:50:41"><controller name="SmsSurvey" />
+<actionGroup id="ag5" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:50:41"><controller name="SmsSurvey" />
+<actionGroup id="ag5" />
+<action id="a5" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:50:41"><controller name="SmsSurvey" />
+<actionGroup id="ag5" />
+<action id="a4" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:50:41"><controller name="SmsSurvey" />
+<actionGroup id="ag5" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:51:39"><controller name="SmsSurvey" />
+<view id="grid1" />
+<dataField fieldName="SmssurveyformSmssurveyformid" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T15:01:24"><controller name="SmsSurvey" />
+<view id="grid1" />
+<update>
+  <GroupExpression>SmssurveyFormID</GroupExpression>
+</update></c><c y="NodeSet" t="2019-04-16T15:02:06"><controller name="SmsSurvey" />
+<view id="grid1" />
+<dataField fieldName="fkSmssurveyformid" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T15:03:18"><controller name="SmsSurvey" />
+<view id="grid1" />
+<copy>
+  <controller name="SmsSurvey" />
+  <view id="grid1" />
+</copy></c><c y="NodeSet" t="2019-04-16T15:03:30"><controller name="SmsSurvey" />
+<view id="v100" />
+<dataField fieldName="SmssurveyFormID" />
+<delete /></c><c y="NodeSet" t="2019-04-16T15:03:45"><controller name="SmsSurvey" />
+<view id="v100" />
+<rename>SurveyList</rename></c><c y="NodeSet" t="2019-04-16T15:04:41"><controller name="SmsSurveyForm" />
+<field name="SmsSurvey" />
+<update>
+  <DataViewId>SurveyList</DataViewId>
+</update></c><c y="NodeSet" t="2019-04-16T15:19:51"><controller name="SmsSurvey" />
+<insert type="view">
+  <ViewId>Timeline</ViewId>
+  <Type>Chart</Type>
+  <Legend>false</Legend>
+  <CommandId>command1</CommandId>
+  <Label>Timeline of Submitted Surveys</Label>
+  <ShowInSelector>true</ShowInSelector>
+  <ReportTemplate>false</ReportTemplate>
+  <SortExpression>SubmittedDate asc</SortExpression>
+  <GroupExpression>LandedDate, SubmittedDate</GroupExpression>
+</insert></c><c y="NodeSet" t="2019-04-16T15:20:59"><controller name="SmsSurvey" />
+<view id="Timeline" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="SubmittedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T15:22:16"><controller name="SmsSurvey" />
+<view id="Timeline" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="Smssurveyid" />
+</move></c><c y="NodeSet" t="2019-04-16T15:22:22"><controller name="SmsSurvey" />
+<view id="Timeline" />
+<dataField fieldName="Smssurveyid" />
+<move>
+  <controller name="SmsSurvey" />
+  <view id="Timeline" />
+  <dataField fieldName="SubmittedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T15:22:42"><controller name="SmsSurvey" />
+<view id="Timeline" />
+<update>
+  <GroupExpression>SubmittedDate</GroupExpression>
+</update></c><c y="NodeSet" t="2019-04-16T15:23:57"><controller name="SmsSurvey" />
+<view id="Timeline" />
+<delete /></c><c y="NodeSet" t="2019-04-16T15:24:31"><controller name="SmsSurvey" />
+<insert type="view">
+  <ViewId>timeline</ViewId>
+  <Type>Chart</Type>
+  <Legend>false</Legend>
+  <CommandId>command1</CommandId>
+  <Label>Timeline of Submissions</Label>
+  <ShowInSelector>true</ShowInSelector>
+  <ReportTemplate>false</ReportTemplate>
+</insert></c><c y="NodeSet" t="2019-04-16T15:24:49"><controller name="SmsSurvey" />
+<view id="timeline" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="Smssurveyid" />
+</move></c><c y="NodeSet" t="2019-04-16T15:24:49"><controller name="SmsSurvey" />
+<view id="timeline" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="SubmittedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T15:26:28"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="Smssurveyid" />
+<delete /></c><c y="NodeSet" t="2019-04-16T15:28:18"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="SubmittedDate" />
+<update>
+  <DataFormatString>d t</DataFormatString>
+  <Hidden>false</Hidden>
+  <Chart>Line</Chart>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T15:30:30"><controller name="SmsSurvey" />
+<view id="timeline" />
+<delete /></c><c y="NodeSet" t="2019-04-16T15:31:39"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<update>
+  <ShowInSelector>false</ShowInSelector>
+</update></c><c y="NodeSet" t="2019-04-16T15:36:28"><controller name="SmsSurvey" />
+<insert type="view">
+  <ViewId>timeline</ViewId>
+  <Type>Chart</Type>
+  <Legend>false</Legend>
+  <CommandId>command1</CommandId>
+  <Label>Timeline of Submissions</Label>
+  <ShowInSelector>true</ShowInSelector>
+  <ReportTemplate>false</ReportTemplate>
+</insert></c><c y="NodeSet" t="2019-04-16T15:36:38"><controller name="SmsSurvey" />
+<view id="timeline" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="SubmittedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T15:36:44"><controller name="SmsSurvey" />
+<view id="timeline" />
+<move>
+  <controller name="SmsSurvey" />
+  <field name="Smssurveyid" />
+</move></c><c y="NodeSet" t="2019-04-16T15:36:47"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="Smssurveyid" />
+<move>
+  <controller name="SmsSurvey" />
+  <view id="timeline" />
+  <dataField fieldName="SubmittedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T15:37:06"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="SubmittedDate" />
+<update>
+  <Tag>pivot1-row1-date-line</Tag>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T15:37:38"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="Smssurveyid" />
+<move>
+  <controller name="SmsSurvey" />
+  <view id="timeline" />
+  <dataField fieldName="SubmittedDate" />
+</move></c><c y="NodeSet" t="2019-04-16T15:37:40"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="SubmittedDate" />
+<move>
+  <controller name="SmsSurvey" />
+  <view id="timeline" />
+  <dataField fieldName="Smssurveyid" />
+</move></c><c y="NodeSet" t="2019-04-16T15:42:26"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="SubmittedDate" />
+<update>
+  <Hidden>false</Hidden>
+  <Chart>Line</Chart>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T15:42:41"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="Smssurveyid" />
+<update>
+  <Hidden>false</Hidden>
+  <Aggregate>Count</Aggregate>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T15:44:52"><controller name="SmsSurvey" />
+<view id="timeline" />
+<update>
+  <ShowInSelector>false</ShowInSelector>
+</update></c><c y="NodeSet" t="2019-04-16T15:46:07"><controller name="SmsSurvey" />
+<view id="timeline" />
+<delete /></c><c y="NodeSet" t="2019-04-16T15:46:40"><controller name="SmsSurvey" />
+<insert type="view">
+  <ViewId>timeline</ViewId>
+  <Type>Chart</Type>
+  <Legend>false</Legend>
+  <CommandId>command1</CommandId>
+  <Label>Timeline of Submissions</Label>
+  <ShowInSelector>true</ShowInSelector>
+  <ReportTemplate>false</ReportTemplate>
+</insert></c><c y="NodeSet" t="2019-04-16T15:46:58"><controller name="SmsSurvey" />
+<view id="timeline" />
+<insert type="dataField">
+  <FieldName>Smssurveyid</FieldName>
+  <TextMode>Text</TextMode>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowActionBar>true</DataViewShowActionBar>
+  <DataViewShowDescription>true</DataViewShowDescription>
+  <DataViewShowViewSelector>true</DataViewShowViewSelector>
+  <DataViewShowSearchBar>true</DataViewShowSearchBar>
+  <DataViewShowQuickFind>true</DataViewShowQuickFind>
+  <DataViewShowRowNumber>false</DataViewShowRowNumber>
+  <DataViewShowPageSize>true</DataViewShowPageSize>
+  <DataViewShowModalForms>false</DataViewShowModalForms>
+  <DataViewSearchOnStart>false</DataViewSearchOnStart>
+  <DataViewAutoSelectFirstRow>false</DataViewAutoSelectFirstRow>
+  <DataViewAutoHighlightFirstRow>false</DataViewAutoHighlightFirstRow>
+</insert></c><c y="NodeSet" t="2019-04-16T15:47:23"><controller name="SmsSurvey" />
+<view id="timeline" />
+<insert type="dataField">
+  <FieldName>SubmittedDate</FieldName>
+  <TextMode>Text</TextMode>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowActionBar>true</DataViewShowActionBar>
+  <DataViewShowDescription>true</DataViewShowDescription>
+  <DataViewShowViewSelector>true</DataViewShowViewSelector>
+  <DataViewShowSearchBar>true</DataViewShowSearchBar>
+  <DataViewShowQuickFind>true</DataViewShowQuickFind>
+  <DataViewShowRowNumber>false</DataViewShowRowNumber>
+  <DataViewShowPageSize>true</DataViewShowPageSize>
+  <DataViewShowModalForms>false</DataViewShowModalForms>
+  <DataViewSearchOnStart>false</DataViewSearchOnStart>
+  <DataViewAutoSelectFirstRow>false</DataViewAutoSelectFirstRow>
+  <DataViewAutoHighlightFirstRow>false</DataViewAutoHighlightFirstRow>
+</insert></c><c y="NodeSet" t="2019-04-16T15:49:06"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="Smssurveyid" />
+<update>
+  <Hidden>false</Hidden>
+  <Aggregate>Count</Aggregate>
+</update></c><c y="NodeSet" t="2019-04-16T15:49:45"><controller name="SmsSurvey" />
+<view id="timeline" />
+<dataField fieldName="SubmittedDate" />
+<update>
+  <DataFormatString>d</DataFormatString>
+  <Hidden>false</Hidden>
+  <Chart>XValue,Days</Chart>
+</update></c><c y="NodeSet" t="2019-04-16T15:52:52"><controller name="SmsSurvey" />
+<view id="timeline" />
+<rename>submissionTimeline</rename></c><c y="NodeSet" t="2019-04-16T15:56:26"><controller name="SmsSurvey" />
+<view id="submissionTimeline" />
+<delete /></c><c y="NodeSet" t="2019-04-16T16:01:08"><controller name="SmsSurvey" />
+<insert type="view">
+  <ViewId>submissionTL</ViewId>
+  <Type>Chart</Type>
+  <Legend>false</Legend>
+  <CommandId>command1</CommandId>
+  <Label>Submission Timeline</Label>
+  <ShowInSelector>true</ShowInSelector>
+  <ReportTemplate>false</ReportTemplate>
+</insert></c><c y="NodeSet" t="2019-04-16T16:01:20"><controller name="SmsSurvey" />
+<view id="submissionTL" />
+<insert type="dataField">
+  <FieldName>SubmittedDate</FieldName>
+  <TextMode>Text</TextMode>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowActionBar>true</DataViewShowActionBar>
+  <DataViewShowDescription>true</DataViewShowDescription>
+  <DataViewShowViewSelector>true</DataViewShowViewSelector>
+  <DataViewShowSearchBar>true</DataViewShowSearchBar>
+  <DataViewShowQuickFind>true</DataViewShowQuickFind>
+  <DataViewShowRowNumber>false</DataViewShowRowNumber>
+  <DataViewShowPageSize>true</DataViewShowPageSize>
+  <DataViewShowModalForms>false</DataViewShowModalForms>
+  <DataViewSearchOnStart>false</DataViewSearchOnStart>
+  <DataViewAutoSelectFirstRow>false</DataViewAutoSelectFirstRow>
+  <DataViewAutoHighlightFirstRow>false</DataViewAutoHighlightFirstRow>
+</insert></c><c y="NodeSet" t="2019-04-16T16:01:51"><controller name="SmsSurvey" />
+<view id="submissionTL" />
+<insert type="dataField">
+  <FieldName>Smssurveyid</FieldName>
+  <TextMode>Text</TextMode>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowActionBar>true</DataViewShowActionBar>
+  <DataViewShowDescription>true</DataViewShowDescription>
+  <DataViewShowViewSelector>true</DataViewShowViewSelector>
+  <DataViewShowSearchBar>true</DataViewShowSearchBar>
+  <DataViewShowQuickFind>true</DataViewShowQuickFind>
+  <DataViewShowRowNumber>false</DataViewShowRowNumber>
+  <DataViewShowPageSize>true</DataViewShowPageSize>
+  <DataViewShowModalForms>false</DataViewShowModalForms>
+  <DataViewSearchOnStart>false</DataViewSearchOnStart>
+  <DataViewAutoSelectFirstRow>false</DataViewAutoSelectFirstRow>
+  <DataViewAutoHighlightFirstRow>false</DataViewAutoHighlightFirstRow>
+</insert></c><c y="NodeSet" t="2019-04-16T16:02:29"><controller name="SmsSurvey" />
+<view id="submissionTL" />
+<dataField fieldName="SubmittedDate" />
+<update>
+  <Hidden>false</Hidden>
+  <Chart>XValue,Days</Chart>
+</update></c><c y="NodeSet" t="2019-04-16T16:03:55"><controller name="SmsSurvey" />
+<view id="submissionTL" />
+<dataField fieldName="Smssurveyid" />
+<update>
+  <Hidden>false</Hidden>
+  <Aggregate>Count</Aggregate>
+  <Chart>Custom</Chart>
+</update></c><c y="NodeSet" t="2019-04-16T16:05:00"><controller name="SmsSurvey" />
+<view id="submissionTL" />
+<dataField fieldName="Smssurveyid" />
+<update>
+  <Hidden>false</Hidden>
+  <Chart />
+</update></c><c y="NodeSet" t="2019-04-16T16:06:18"><controller name="SmsSurvey" />
+<view id="submissionTL" />
+<dataField fieldName="Smssurveyid" />
+<delete /></c><c y="NodeSet" t="2019-04-16T16:06:35"><controller name="SmsSurvey" />
+<view id="submissionTL" />
+<delete /></c><c y="NodeSet" t="2019-04-16T16:11:08"><controller name="SmsSurvey" />
+<field name="SmsSurveyQa" />
+<update>
+  <Label>SMS Survey QA</Label>
+  <ShowInSummary>true</ShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T16:11:29"><controller name="SmsSurveyForm" />
+<field name="SmsSurvey" />
+<update>
+  <Label>SMS Survey Submission</Label>
+  <ShowInSummary>true</ShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T16:13:21"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<update>
+  <ShowInSelector>true</ShowInSelector>
+</update></c><c y="NodeSet" t="2019-04-16T16:14:12"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<update>
+  <ShowInSelector>false</ShowInSelector>
+</update></c><c y="NodeSet" t="2019-04-16T16:17:09"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<update>
+  <Label>Submissions for this Survey</Label>
+  <ShowInSelector>true</ShowInSelector>
+</update></c><c y="NodeSet" t="2019-04-16T16:22:19"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<dataField fieldName="SmsSurveyQa" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowViewSelector>false</DataViewShowViewSelector>
+  <DataViewShowRowNumber>true</DataViewShowRowNumber>
+</update></c><c y="NodeSet" t="2019-04-16T16:23:35"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<dataField fieldName="SmsSurvey" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowDescription>false</DataViewShowDescription>
+  <DataViewShowViewSelector>false</DataViewShowViewSelector>
+</update></c><c y="NodeSet" t="2019-04-16T16:24:32"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="CreatedBy" />
+<delete /></c><c y="NodeSet" t="2019-04-16T16:24:32"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="UpdatedBy" />
+<delete /></c><c y="NodeSet" t="2019-04-16T16:24:43"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<dataField fieldName="CreatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T16:24:50"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<dataField fieldName="UpdatedBy" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T16:26:17"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<update>
+  <ShowInSelector>false</ShowInSelector>
+</update></c><c y="NodeSet" t="2019-04-16T16:26:48"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<update>
+  <HeaderText>Submissions for this Survey</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-16T16:27:04"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<dataField fieldName="SmsSurvey" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowDescription>true</DataViewShowDescription>
+</update></c><c y="NodeSet" t="2019-04-16T16:28:08"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c5" />
+<update>
+  <HeaderText>Submissions for this Survey</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-16T16:28:21"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c5" />
+<update>
+  <Flow>NewRow</Flow>
+</update></c><c y="NodeSet" t="2019-04-16T16:29:08"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<dataField fieldName="SmsSurvey" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowDescription>false</DataViewShowDescription>
+</update></c><c y="NodeSet" t="2019-04-16T16:32:36"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Answers for this Submission</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-16T16:32:39"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<category id="c1" />
+<move>
+  <controller name="SmsSurvey" />
+  <view id="editForm1" />
+  <category id="c3" />
+</move></c><c y="NodeSet" t="2019-04-16T16:32:44"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<category id="c3" />
+<move>
+  <controller name="SmsSurvey" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="SmsSurveyQa" />
+</move></c><c y="NodeSet" t="2019-04-16T16:33:33"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<dataField fieldName="SmsSurveyQa" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowDescription>false</DataViewShowDescription>
+</update></c><c y="NodeSet" t="2019-04-16T16:33:44"><controller name="SmsSurvey" />
+<view id="editForm1" />
+<dataField fieldName="SmsSurveyQa" />
+<update>
+  <Hidden>false</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+  <DataViewShowViewSelector>false</DataViewShowViewSelector>
+</update></c><c y="NodeSet" t="2019-04-16T17:23:33"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c3" />
+<dataField fieldName="SmssurveyPlatform" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="editForm1" />
+  <category id="c3" />
+  <dataField fieldName="SmssurveyPlatformID" />
+</move></c><c y="NodeSet" t="2019-04-16T17:23:47"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="SmssurveyPlatformID" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="grid1" />
+  <dataField fieldName="SmssurveyDesc" />
+</move></c><c y="NodeSet" t="2019-04-16T17:23:50"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="SmssurveyDesc" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="grid1" />
+  <dataField fieldName="SmssurveyPlatformID" />
+</move></c><c y="NodeSet" t="2019-04-16T17:23:51"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="SmssurveyPlatform" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <view id="grid1" />
+  <dataField fieldName="SmssurveyPlatformID" />
+</move></c><c y="NodeSet" t="2019-04-16T17:23:55"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="SmssurveyPlatformID" />
+<update>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-16T17:25:25"><controller name="SmsSurveyForm" />
+<actionGroup id="ag5" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-16T17:25:25"><controller name="SmsSurveyForm" />
+<actionGroup id="ag5" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-16T17:25:25"><controller name="SmsSurveyForm" />
+<actionGroup id="ag5" />
+<action id="a4" />
+<delete /></c><c y="NodeSet" t="2019-04-16T17:25:25"><controller name="SmsSurveyForm" />
+<actionGroup id="ag5" />
+<action id="a5" />
+<delete /></c><c y="NodeSet" t="2019-04-16T17:25:25"><controller name="SmsSurveyForm" />
+<actionGroup id="ag5" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-16T17:25:25"><controller name="SmsSurveyForm" />
+<actionGroup id="ag5" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-16T17:25:25"><controller name="SmsSurveyForm" />
+<actionGroup id="ag5" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:53:51"><controller name="SmsBlastMessageEmployee" />
+<view id="grid1" />
+<rename>list380</rename></c><c y="NodeSet" t="2019-04-19T13:54:07"><controller name="SmsBlastMessageEmployee" />
+<view id="createForm1" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:18"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag1" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:18"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag1" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:18"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag1" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:18"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag1" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:18"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag1" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:31"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag2" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:46"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag3" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:46"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag4" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:46"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag6" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:55"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag5" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:55"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag5" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:55"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag5" />
+<action id="a4" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:55"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag5" />
+<action id="a5" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:55"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag5" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:55"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag5" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:54:55"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag5" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:55:05"><controller name="SmsBlastMessageEmployee" />
+<actionGroup id="ag8" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:55:36"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '380'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-19T13:58:46"><controller name="SmsSurveyForm" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+</move></c><c y="NodeSet" t="2019-04-19T14:02:06"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c5" />
+<dataField fieldName="SmsSurvey" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:02:13"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c5" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <field name="SmsBlastMessageEmployee" />
+</move></c><c y="NodeSet" t="2019-04-19T14:02:25"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<dataField fieldName="SmsSurvey" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:02:33"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <field name="SmsBlastMessageEmployee" />
+</move></c><c y="NodeSet" t="2019-04-19T14:12:29"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '339'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-19T14:30:21"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '339' and EmployeeEmploymentStatus = 'A'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-19T14:32:04"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="Sbmsgid" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="list380" />
+  <dataField fieldName="EmployeeFirstName" />
+</move></c><c y="NodeSet" t="2019-04-19T14:32:04"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="Sbmsgid" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="list380" />
+  <dataField fieldName="EmployeeLastName" />
+</move></c><c y="NodeSet" t="2019-04-19T14:32:35"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="Eecid" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:32:47"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="EmployeeEmploymentStatus" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:33:20"><controller name="Employee" />
+<actionGroup id="ag1" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:20"><controller name="Employee" />
+<actionGroup id="ag1" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:20"><controller name="Employee" />
+<actionGroup id="ag1" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:20"><controller name="Employee" />
+<actionGroup id="ag1" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:20"><controller name="Employee" />
+<actionGroup id="ag1" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:28"><controller name="Employee" />
+<actionGroup id="ag2" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:37"><controller name="Employee" />
+<actionGroup id="ag3" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:37"><controller name="Employee" />
+<actionGroup id="ag4" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:37"><controller name="Employee" />
+<actionGroup id="ag6" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:44"><controller name="Employee" />
+<actionGroup id="ag5" />
+<action id="a2" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:44"><controller name="Employee" />
+<actionGroup id="ag5" />
+<action id="a3" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:44"><controller name="Employee" />
+<actionGroup id="ag5" />
+<action id="a4" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:44"><controller name="Employee" />
+<actionGroup id="ag5" />
+<action id="a5" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:44"><controller name="Employee" />
+<actionGroup id="ag5" />
+<action id="a6" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:44"><controller name="Employee" />
+<actionGroup id="ag5" />
+<action id="a7" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:44"><controller name="Employee" />
+<actionGroup id="ag5" />
+<action id="a8" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:33:57"><controller name="Employee" />
+<actionGroup id="ag8" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:36:10"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="Sbmsgid" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:38:48"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<dataField fieldName="Sbmsgid" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:39:22"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c1" />
+<update>
+  <HeaderText>Employee Info</HeaderText>
+  <Flow>NewRow</Flow>
+</update></c><c y="NodeSet" t="2019-04-19T14:39:38"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>SMS Information</HeaderText>
+</insert></c><c y="NodeSet" t="2019-04-19T14:39:51"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c1" />
+<update>
+  <HeaderText>Employee Information</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-19T14:40:06"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="Sbmsgid" />
+</move></c><c y="NodeSet" t="2019-04-19T14:40:06"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="SmsSendStatus" />
+</move></c><c y="NodeSet" t="2019-04-19T14:40:06"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="SmsSendDate" />
+</move></c><c y="NodeSet" t="2019-04-19T14:40:16"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="EmployeeEmploymentStatus" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="Eecid" />
+</move></c><c y="NodeSet" t="2019-04-19T14:40:44"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<insert type="category">
+  <HeaderText>Audit</HeaderText>
+  <Flow>NewRow</Flow>
+</insert></c><c y="NodeSet" t="2019-04-19T14:40:51"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c3" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="editForm1" />
+  <category id="c1" />
+  <dataField fieldName="CreatedDate" />
+</move></c><c y="NodeSet" t="2019-04-19T14:41:40"><controller name="SmsBlastMessageEmployee" />
+<move>
+  <controller name="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-19T14:41:46"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <field name="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-19T14:41:52"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <field name="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-19T14:42:05"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c2" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="editForm1" />
+  <category id="c3" />
+  <dataField fieldName="SmsSurvey" />
+</move></c><c y="NodeSet" t="2019-04-19T14:43:06"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSendStatus" />
+<insert type="item">
+  <Value>0</Value>
+  <Text>Not Sent</Text>
+</insert></c><c y="NodeSet" t="2019-04-19T14:43:15"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSendStatus" />
+<insert type="item">
+  <Value>1</Value>
+  <Text>Sent</Text>
+</insert></c><c y="NodeSet" t="2019-04-19T14:43:37"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSendStatus" />
+<insert type="item">
+  <Value>2</Value>
+  <Text>Resent</Text>
+</insert></c><c y="NodeSet" t="2019-04-19T14:43:50"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSendStatus" />
+<item value="2" />
+<update>
+  <Text>Resent (2)</Text>
+</update></c><c y="NodeSet" t="2019-04-19T14:44:05"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSendStatus" />
+<insert type="item">
+  <Value>3</Value>
+  <Text>Resent (3)</Text>
+</insert></c><c y="NodeSet" t="2019-04-19T14:45:11"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="SmsSendDate" />
+<update>
+  <Hidden>false</Hidden>
+  <Visibility>SmsSendStatus != '0'</Visibility>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:45:29"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<dataField fieldName="SmsSendDate" />
+<update>
+  <Hidden>false</Hidden>
+  <Visibility>SmsSendStatus != '0'</Visibility>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:47:00"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<dataField fieldName="SmsSendDate" />
+<update>
+  <Hidden>false</Hidden>
+  <Visibility>SmsSendStatus &lt;&gt; '0'</Visibility>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:47:45"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<dataField fieldName="SmsSendDate" />
+<update>
+  <Hidden>false</Hidden>
+  <Visibility>[SmsSendStatus] != '0'</Visibility>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:47:59"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="SmsSendDate" />
+<update>
+  <Hidden>false</Hidden>
+  <Visibility>[SmsSendStatus] != '0'</Visibility>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:48:50"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<dataField fieldName="SmsSurvey" />
+<update>
+  <Hidden>false</Hidden>
+  <Visibility>[SmsSendStatus] != '0'</Visibility>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c><c y="NodeSet" t="2019-04-19T14:49:25"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<dataField fieldName="EmployeeFirstName" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+  <view id="list380" />
+  <dataField fieldName="EmployeeLastName" />
+</move></c><c y="NodeSet" t="2019-04-19T14:50:01"><controller name="Employee" />
+<view id="grid1" />
+<dataField fieldName="SiteCode" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:50:12"><controller name="Employee" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="SiteCode" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:51:11"><controller name="SmsBlastMessageEmployee" />
+<view id="editForm1" />
+<category id="c1" />
+<dataField fieldName="EmployeeEmploymentStatus" />
+<delete /></c><c y="NodeSet" t="2019-04-19T14:52:30"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '380' and EmployeeEmploymentStatus = 'A'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-19T14:54:33"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '326' and EmployeeEmploymentStatus = 'A'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-19T15:26:27"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '380' and EmployeeEmploymentStatus = 'A'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-19T15:26:42"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '380'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-26T14:32:52"><controller name="SmsSurveyForm" />
+<field name="SmsSurvey" />
+<update>
+  <DataViewId>grid1</DataViewId>
+  <DataViewFilterFields>fkSmssurveyformid</DataViewFilterFields>
+</update></c><c y="NodeSet" t="2019-04-26T14:35:53"><controller name="SmsSurveyForm" />
+<field name="SmsSurvey" />
+<delete /></c><c y="NodeSet" t="2019-04-26T14:36:38"><controller name="SmsSurveyForm" />
+<field name="SmsBlastMessageEmployee" />
+<delete /></c><c y="NodeSet" t="2019-04-26T15:14:36"><controller name="SmsSurveyForm" />
+<move>
+  <controller name="SmsBlastMessageEmployee" />
+</move></c><c y="NodeSet" t="2019-04-26T15:15:02"><controller name="SmsSurveyForm" />
+<view id="grid1" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <field name="SmsBlastMessageEmployee" />
+</move></c><c y="NodeSet" t="2019-04-26T15:16:01"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c5" />
+<update>
+  <HeaderText>Text Messages Sent for this Survey</HeaderText>
+</update></c><c y="NodeSet" t="2019-04-26T15:16:07"><controller name="SmsSurveyForm" />
+<view id="editForm1" />
+<category id="c5" />
+<move>
+  <controller name="SmsSurveyForm" />
+  <field name="SmsBlastMessageEmployee" />
+</move></c><c y="NodeSet" t="2019-04-26T15:21:09"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '11'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-26T15:42:38"><controller name="SmsBlastMessageEmployee" />
+<field name="SurveySubmitted" />
+<insert type="item">
+  <Value>Y</Value>
+  <Text>Yes</Text>
+</insert></c><c y="NodeSet" t="2019-04-26T15:42:51"><controller name="SmsBlastMessageEmployee" />
+<field name="SurveySubmitted" />
+<insert type="item">
+  <Value>N</Value>
+  <Text>No</Text>
+</insert></c><c y="NodeSet" t="2019-04-26T15:45:29"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <FilterExpression>Sbmsgid = '380'</FilterExpression>
+</update></c><c y="NodeSet" t="2019-04-26T15:45:38"><controller name="SmsBlastMessageEmployee" />
+<view id="list380" />
+<update>
+  <Label>SMS Blast Message Employee</Label>
+</update></c><c y="NodeSet" t="2019-04-26T15:47:04"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSurvey" />
+<update>
+  <ContextFields>PrimarykeyFormVariable=Eecid</ContextFields>
+</update></c><c y="NodeSet" t="2019-04-26T15:47:14"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSurvey" />
+<update>
+  <Label>SMS Survey</Label>
+</update></c><c y="NodeSet" t="2019-04-26T16:32:56"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSurvey" />
+<update>
+  <ContextFields>PrimarykeyFormAltVariable=Eecid</ContextFields>
+</update></c><c y="NodeSet" t="2019-04-26T16:50:47"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSurvey" />
+<update>
+  <DataViewId>SurveyList</DataViewId>
+  <DataViewFilterSource>SmsSurvey</DataViewFilterSource>
+</update></c><c y="NodeSet" t="2019-04-26T16:55:33"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSurvey" />
+<update>
+  <DataViewId>grid1</DataViewId>
+</update></c><c y="NodeSet" t="2019-04-26T16:55:43"><controller name="SmsBlastMessageEmployee" />
+<field name="SmsSurvey" />
+<update>
+  <DataViewFilterSource />
+</update></c><c y="NodeSet" t="2019-04-26T17:01:47"><controller name="SmsSurvey" />
+<view id="SurveyList" />
+<update>
+  <ShowInSelector>true</ShowInSelector>
+  <GroupExpression />
+</update></c></log><log type="Application"><c y="NodeSet" t="2019-04-16T14:10:01"><page name="SmsSurveyQa" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:10:01"><page name="SiteContent" />
+<delete /></c><c y="NodeSet" t="2019-04-16T14:37:45"><page name="SmsSurveyForm" />
+<update>
+  <UseExtenders>false</UseExtenders>
+  <Offline>false</Offline>
+  <Title>SMS Survey</Title>
+  <Description>View SMS Survey</Description>
+  <About>This page allows SMS Survey management.</About>
+</update></c><c y="NodeSet" t="2019-04-16T14:39:06"><page name="SmsSurvey" />
+<update>
+  <UseExtenders>false</UseExtenders>
+  <Offline>false</Offline>
+  <Title>SMS Survey Submissions</Title>
+  <Description>View SMS Survey Submissions</Description>
+  <About>This page allows SMS Survey Submissions management.</About>
+</update></c><c y="NodeSet" t="2019-04-19T13:43:15"><page name="SmsBlastMessageEmployee" />
+<delete /></c><c y="NodeSet" t="2019-04-19T13:52:50"><page name="Employee" />
+<delete /></c></log></logs>
